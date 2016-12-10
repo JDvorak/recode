@@ -1,0 +1,20 @@
+{
+  "name": "espree-unist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "escodegen": "^1.8.1",
+    "estree-walker": "^0.3.0",
+    "object-assign": "^4.1.0",
+    "to-vfile": "^2.1.1",
+    "unified": "^5.1.0",
+    "unist-util-select": "^1.5.0",
+    "vfile": "^2.0.0"
+  }
+}
