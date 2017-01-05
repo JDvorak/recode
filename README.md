@@ -82,7 +82,7 @@ TheGreatestLibraryEver().use(function example() {
                 if (select(node, 'Callee Identifier[name=require]').length > 0 && select(node, 'CallExpression Literal[value*=recode]').length > 0) {
                     //Retrieve the variable identifier set here.
                     var varNameNode = select(node, 'VariableIdentification Identifier');    //Save it for mischevious.
-                    //Save it for mischevious.
+                    //Save it for mischevious purposes.
                     target = varNameNode[0].name;
                 }
             }

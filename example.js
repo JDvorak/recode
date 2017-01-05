@@ -18,7 +18,7 @@ recode()
               //Retrieve the variable identifier set here.
               var varNameNode = select(node, 'VariableIdentification Identifier')
 
-              //Save it for mischevious.
+              //Save it for mischevious purposes.
               target = varNameNode[0].name
             }
         }
