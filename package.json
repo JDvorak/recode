@@ -1,8 +1,8 @@
 {
-  "name": "espree-unist",
+  "name": "recode",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha spec/index.js"
   },
