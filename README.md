@@ -2,15 +2,16 @@
 
 Recode is a tiny [unified][unified] interface for translating javascript into [UNIST][unist] compliant jsAST format, performing transformations, and converting them back again! 
 
+### Introduction
+Out of the box, recode transpiles javascript: javascript code is given, reformatted, and rewritten. Pass in some scripts, out come some scripts. Usually small programmatically irrelevant details are stripped (such as idiosyncratic spacing habits, or strange parenthesis placement). However, a lot more can be done by passing in plugins. 
+
 ### Vision
 Recode will bridge the three largest tree transforming javascript plugin ecosystems: [Babel][babel], [Acorn][acorn], and [Unified][unified].
 
-### Acknowledgments
-This library has only been made possible by the work of [Titus Wormer][wooorm]. Everything about Recode has been modeled after his [Rehype][rehype], [Remark][remark], and [Retext][retext] libraries, even the name! The tests couldn't be possible if not for the [espree][espree] repository itself.
 
 ## Installation
 
-[npm][]:
+NPM:
 
 ```bash
 npm install jdvorak/recode
@@ -21,7 +22,7 @@ npm install jdvorak/recode
 ```js
 var recode = require('recode');
 var fs = require('fs')
-var tests = fs.readFileSync('./example.js', 'utf8')
+var exampleJS = fs.readFileSync('./example.js', 'utf8')
 var map = require('unist-util-map');
 var select = require('unist-util-select');
 
@@ -56,7 +57,7 @@ recode()
       });
     }
   })
-  .process(tests, function (err, file) {
+  .process(exampleJS, function (err, file) {
     console.log(file.contents);
   });
 ```
@@ -66,7 +67,7 @@ Yields:
 ```js
 var TheGreatestLibraryEver = require('recode');
 var fs = require('fs');
-var tests = fs.readFileSync('./example.js', 'utf8');
+var exampleJS = fs.readFileSync('./example.js', 'utf8');
 var map = require('unist-util-map');
 var select = require('unist-util-select');
 TheGreatestLibraryEver().use(function example() {
@@ -91,11 +92,15 @@ TheGreatestLibraryEver().use(function example() {
             return node;
         });
     };
-}).process(tests, function (err, file) {
+}).process(exampleJS, function (err, file) {
     console.log(file.contents);
 });
 
 ```
+
+
+### Acknowledgments
+This library has only been made possible by the work of [Titus Wormer][wooorm]. Everything about Recode has been modeled after his [Rehype][rehype], [Remark][remark], and [Retext][retext] libraries, even the name! The tests couldn't be possible if not for the [espree][espree] repository itself.
 
 
 ## Todo
@@ -129,3 +134,4 @@ TheGreatestLibraryEver().use(function example() {
 [babel]: https://babeljs.io/
 
 [acorn]: https://github.com/ternjs/acorn
+

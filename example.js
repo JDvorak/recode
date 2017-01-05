@@ -1,6 +1,6 @@
 var recode = require('recode');
 var fs = require('fs')
-var tests = fs.readFileSync('./example.js', 'utf8')
+var exampleJS = fs.readFileSync('./example.js', 'utf8')
 var map = require('unist-util-map');
 var select = require('unist-util-select');
 
@@ -34,6 +34,6 @@ recode()
       });
     }
   })
-  .process(tests, function (err, file) {
+  .process(exampleJS, function (err, file) {
     console.log(file.contents);
   });
