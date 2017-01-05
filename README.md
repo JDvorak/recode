@@ -109,7 +109,6 @@ This library has only been made possible by the work of [Titus Wormer][wooorm]. 
 ## Todo
 - [ ] Extend tests to verify support for ES2015, ES6, ES7
 - [ ] Spread Operator 
-- [ ] Usage Documentation (hint: it assumes you are using a [vfile][vfile])
 - [ ] jsAST Specification
 - [ ] BabylonAST<>jsAST 
 
