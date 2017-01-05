@@ -2,6 +2,9 @@
 
 Recode is a tiny [unified][unified] interface for translating javascript into [UNIST][unist] compliant jsAST format, performing transformations, and converting them back again! 
 
+## Production
+This library is not production ready. Look forward to when the npm version no longer is tagged `-experimental`
+
 ### Introduction
 Out of the box, recode transpiles javascript: javascript code is given, reformatted, and rewritten. Pass in some scripts, out come some scripts. Usually small programmatically irrelevant details are stripped (such as idiosyncratic spacing habits, or strange parenthesis placement). However, a lot more can be done by passing in plugins. 
 
@@ -14,13 +17,13 @@ Recode will bridge the three largest tree transforming javascript plugin ecosyst
 NPM:
 
 ```bash
-npm install jdvorak/recode
+npm install node-recode
 ```
 
 ## Usage
 
 ```js
-var recode = require('recode');
+var recode = require('node-recode');
 var fs = require('fs')
 var exampleJS = fs.readFileSync('./example.js', 'utf8')
 var map = require('unist-util-map');
@@ -65,7 +68,7 @@ recode()
 Yields:
 
 ```js
-var TheGreatestLibraryEver = require('recode');
+var TheGreatestLibraryEver = require('node-recode');
 var fs = require('fs');
 var exampleJS = fs.readFileSync('./example.js', 'utf8');
 var map = require('unist-util-map');

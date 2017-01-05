@@ -1,12 +1,14 @@
 {
-  "name": "recode",
-  "version": "1.1.0",
+  "name": "node-recode",
+  "version": "1.1.2-experimental",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha spec/index.js"
   },
-  "author": "",
+  "author": "John Dvorak <twelvetwo@gmail.com>",
+  "repository": "git://github.com/JDvorak/recode.git",
+  "homepage": "https://github.com/JDvorak/recode",
   "license": "ISC",
   "dependencies": {
     "escodegen": "^1.8.1",

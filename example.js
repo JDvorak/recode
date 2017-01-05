@@ -1,4 +1,4 @@
-var recode = require('recode');
+var recode = require('node-recode');
 var fs = require('fs')
 var exampleJS = fs.readFileSync('./example.js', 'utf8')
 var map = require('unist-util-map');
@@ -13,7 +13,7 @@ recode()
 
             //Grab where require is called, and where it requires 'recode'
             if (select(node, 'Callee Identifier[name=require]').length > 0 && 
-                select(node, 'CallExpression Literal[value*=recode]').length > 0) {
+                select(node, 'CallExpression Literal[value*=node-recode]').length > 0) {
 
               //Retrieve the variable identifier set here.
               var varNameNode = select(node, 'VariableIdentification Identifier')
