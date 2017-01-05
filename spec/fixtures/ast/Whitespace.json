@@ -1,0 +1,254 @@
+{
+    "new \t\u000b\f  ᠎             　﻿a": {
+        "type": "ExpressionStatement",
+        "expression": {
+            "type": "NewExpression",
+            "callee": {
+                "type": "Identifier",
+                "name": "a",
+                "range": [
+                    25,
+                    26
+                ],
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 25
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 26
+                    }
+                }
+            },
+            "arguments": [],
+            "range": [
+                0,
+                26
+            ],
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 26
+                }
+            }
+        },
+        "range": [
+            0,
+            26
+        ],
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0
+            },
+            "end": {
+                "line": 1,
+                "column": 26
+            }
+        }
+    },
+    "{0\n1\r2 3 4}": {
+  "type": "BlockStatement",
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 5,
+      "column": 2
+    }
+  },
+  "range": [
+    0,
+    11
+  ],
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 1
+        },
+        "end": {
+          "line": 1,
+          "column": 2
+        }
+      },
+      "range": [
+        1,
+        2
+      ],
+      "expression": {
+        "type": "Literal",
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 1
+          },
+          "end": {
+            "line": 1,
+            "column": 2
+          }
+        },
+        "range": [
+          1,
+          2
+        ],
+        "value": 0,
+        "raw": "0"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      "range": [
+        3,
+        4
+      ],
+      "expression": {
+        "type": "Literal",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 1
+          }
+        },
+        "range": [
+          3,
+          4
+        ],
+        "value": 1,
+        "raw": "1"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      "range": [
+        5,
+        6
+      ],
+      "expression": {
+        "type": "Literal",
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 1
+          }
+        },
+        "range": [
+          5,
+          6
+        ],
+        "value": 2,
+        "raw": "2"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 1
+        }
+      },
+      "range": [
+        7,
+        8
+      ],
+      "expression": {
+        "type": "Literal",
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 1
+          }
+        },
+        "range": [
+          7,
+          8
+        ],
+        "value": 3,
+        "raw": "3"
+      }
+    },
+    {
+      "type": "ExpressionStatement",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 1
+        }
+      },
+      "range": [
+        9,
+        10
+      ],
+      "expression": {
+        "type": "Literal",
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 5,
+            "column": 1
+          }
+        },
+        "range": [
+          9,
+          10
+        ],
+        "value": 4,
+        "raw": "4"
+      }
+    }
+  ]
+}
+}
